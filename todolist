@@ -1,0 +1,22 @@
+mysql> create database todolist;
+Query OK, 1 row affected (0.09 sec)
+
+mysql> use todolist;
+Database changed
+mysql> create table todolist(id int primary key auto_increment,taskname varchar(30),taskdescription varchar(200));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> desc todolist;
++-----------------+--------------+------+-----+---------+----------------+
+| Field           | Type         | Null | Key | Default | Extra          |
++-----------------+--------------+------+-----+---------+----------------+
+| id              | int          | NO   | PRI | NULL    | auto_increment |
+| taskname        | varchar(30)  | YES  |     | NULL    |                |
+| taskdescription | varchar(200) | YES  |     | NULL    |                |
++-----------------+--------------+------+-----+---------+----------------+
+3 rows in set (0.06 sec)
+
+mysql> select * from todolist;
+Empty set (0.01 sec)
+
+mysql> notee;
